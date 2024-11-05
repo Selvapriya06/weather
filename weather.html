@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body>
+  <div id="weather-container">
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="city-name"></div>
+    <div id="temperature"></div>
+    <img id="weather-icon" alt="Weather Icon"
+      src="https://purepng.com/public/uploads/large/purepng.com-weather-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596142qx4ep.png">
+    <div id="weather-description"></div>
+    <div id="min-temp" class="info-container hidden"></div>
+    <div id="max-temp" class="info-container hidden"></div>
+    <div id="humidity" class="info-container hidden"></div>
+    <div id="wind" class="info-container hidden"></div>
+    <div id="date"></div>
+    <button id="details-toggle" onclick="toggleDetails()">Toggle Details</button>
+    <!-- Placeholder for calendar images with circled today's date -->
+    <div id="calendar-container">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/000/098/703/small/vector-weather-icon-set.jpg"
+        alt="Calendar Image">
+    </div>
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+  <script src="./weather.js" ></script>
+</body>
+</html>

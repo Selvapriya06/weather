@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+    /* Set initial background image for the entire webpage */
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-hand-drawn-blue-sky-white-clouds-weather-forecast-illustration-background-picture-image_1137685.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #weather-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    color: #34495e;
+    perspective: 1000px;
+    transition: transform 0.5s;
+    overflow: auto;
+    max-height: 70vh;
+    width: 60%; /* Adjust the width as needed */
+  }
+
+  #weather-container.flip {
+    transform: rotateY(180deg);
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-color: #27ae60;
+  }
+
+  #temperature {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  #city-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  #weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  #weather-description {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .info-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .info-button:hover {
+    background-color: #2980b9;
+  }
+
+  .info-container {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #date {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  #calendar-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #3498db;
+  }
+
+  .error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+  }
+
+
